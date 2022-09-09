@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="portfolio, developer, HTML, CSS, JavaScript, web, front-end">
+    <meta name="description" content="A front-end developer portfolio for Victor Okpukpan, an upcoming web developer.">
+    <meta name="author" content="Victor Okpukpan">
+    <link rel="stylesheet" href="./style.css"/>
+    <link type="image/png" sizes="16x16" rel="shortcut icon" href="./images/favicon.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/83226b2274.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init("vWEgfFhiGnZnU7Az_");
+    })();
+    </script>
+    <title>Developer Portfolio | Victor Okpukpan</title>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <header>
+        <nav class="nav--bar" id="nav-bar"  data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1300">
+            <a href="#home" class="logo">Victor<span>Okpukpan</span></a>
+
+            <!-- Hamburger -->
+            <input type="checkbox" class="checkbox">
+            <div class="hamburger">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+
+            <ul class="nav--links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <img class="menu-btn" src="./images/menu.png" alt="menu button">
+        </nav>
+    </header>
+
+    <!-- HOME PAGE -->
+    <section id="home">
+        <div class="container">
+           <div class="hero--text">
+                <h1  data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">Front-End Designer, And Developer.</h1>
+                <h4  data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">Building the future through web development.</h4>
+                <div class="button"  data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000">
+                    <button class="btn">
+                        <a href="#portfolio">View My Works</a>
+                    </button>
+                </div>
+           </div>
+          
+           <div class="hero--img">
+                <img src="./images/hero-img.png" alt="Victor Okpukpan">
+           </div>
+
+           <div class="socials" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1500" data-aos-anchor-placement="bottom-bottom">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+           </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="container">
+            <div class="hero" data-aos="fade-right" data-aos-duration="1200">
+                <img src="./images/hero-img.png" alt="Victor Okpukpan">
+            </div>
+            <div class="text--wrapper" data-aos="fade-right" data-aos-duration="1200">
+                <h3>My name is Victor Akan Okpukpan.</h3>
+                <h4>A <span>Front-End Developer</span> based in Akwa-Ibom, Nigeria.</h4>
+                <p>
+                    I specialize in designing and        developing simple, and interactive modern websites and web services.
+                    I am passionate about building the future through web development and hope to put my skills to use wherever necessary in order to make this a reality.
+                </p>
+                <div class="button">
+                    <button class="btn">
+                        <a href="#portfolio">Download Resume</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES PAGE -->
+    <section id="services">
+        <div class="heading">
+            <h2>My Services</h2>
+        </div>
+        
+        <div class="container">
+            <div class="service" data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <h4>Web Design</h4>                    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eveniet ullam eius quibusdam quisquam aut cumque eos iste fugit magnam.</p>                   
+            </div>
+
+            <div class="service" data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <i class="fa-solid fa-code"></i>
+                <h4>Web Development</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eveniet ullam eius quibusdam quisquam aut cumque eos iste fugit magnam.</p>
+            </div>
+
+            <div class="service" data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <i class="fa-solid fa-envelope"></i>
+                <h4>HTML Emails</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eveniet ullam eius quibusdam quisquam aut cumque eos iste fugit magnam.</p>                   
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="heading">
+            <h2>Projects</h2>
+        </div>
+
+        <div class="portfolio-wrapper">
+            <div class="portfolio-nav">
+                <div class="filter">
+                    <span class="filter-item active" data-filter="all">All</span>
+                    <span class="filter-item" data-filter="email">Emails</span>
+                    <span class="filter-item" data-filter="website">Websites</span>
+                </div>
+            </div>
+
+            <div class="portfolio-content">
+
+                <div class="portfolio-item email" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="portfolio-item-inner">
+                        <img src="./images/taste.png" alt="">
+                        <div class="overlay">
+                            <h4>Project #1</h4>
+                            <p>More Info</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item website" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="portfolio-item-inner">
+                        <img src="./images/taste.png" alt="">
+                        <div class="overlay">
+                            <h4>Project #1</h4>
+                            <p>More Info</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item website" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="portfolio-item-inner">
+                        <img src="./images/taste.png" alt="">
+                        <div class="overlay">
+                            <h4>Project #1</h4>
+                            <p>More Info</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item website" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="portfolio-item-inner">
+                        <img src="./images/taste.png" alt="">
+                        <div class="overlay">
+                            <h4>Project #1</h4>
+                            <p>More Info</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item email" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="portfolio-item-inner">
+                        <img src="./images/taste.png" alt="">
+                        <div class="overlay">
+                            <h4>Project #1</h4>
+                            <p>More Info</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item website" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="portfolio-item-inner">
+                        <img src="./images/taste.png" alt="">
+                        <div class="overlay">
+                            <h4>Project #1</h4>
+                            <p>More Info</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="heading">
+            <h2>GET IN TOUCH</h2>
+        </div>
+
+        <div class="container">
+            <form id="form" action="submit" method="POST" data-aos="fade-right" data-aos-duration="1200">
+                <div class="title">
+                    <h3>Message Me</h3>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-data">
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="input-data">
+                    <input type="text" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="input-data">
+                    <textarea name="message" id="message"placeholder="Your Message..." required></textarea>
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="btn" >Send Your Message</button>
+                </div>
+            </form>
+
+            <div class="contact-info" data-aos="fade-right" data-aos-duration="1200">
+                <div class="title">
+                    <h3>Contact-info</h3>
+                </div>
+
+                <ul class="contact-list">
+                    
+                    <li class="list-item">
+                        <div class="icon">
+                            <i class="fa-brands fa-hive"></i>
+                        </div>
+                        <div class="details">
+                            <label for="#">Name</label>
+                            <p>Victor Okpukpan</p>
+                        </div>
+                    </li>
+
+                    <li class="list-item">
+                        <div class="icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div class="details">
+                            <label for="#">Location</label>
+                            <p>Akwa-Ibom, Nigeria</p>
+                        </div>
+                    </li>
+
+                    <li class="list-item">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="details">
+                            <label for="#">Call Me</label>
+                            <p>+234 806 991 9416</p>
+                            <p>+234 907 663 9099</p>
+                        </div>
+                    </li>
+
+                    <li class="list-item">
+                        <div class="icon">
+                            <i class="fa-solid fa-at"></i>
+                        </div>
+                        <div class="details">
+                            <label for="#">Email</label>
+                            <p>vokpukpan@gmail.com</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Victor Okpukpan &copy All Rights Reserved</p>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+</html> 
