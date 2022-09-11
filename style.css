@@ -635,7 +635,7 @@ input[type="checkbox"]:checked ~ .hamburger .line3 {
         top: 0;
         left: -100%;
         background-color: var(--background-color2);
-        width: 300px;
+        width: 50%;
         height: 100%;
         padding-top: 8rem;
         padding-left: 2rem;
