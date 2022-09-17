@@ -317,8 +317,126 @@ p, span {
     margin: 20px 0;
 }
 
-/* SERVICES SECTION */
+/* SKILLS SECTION */
+#skills {
+    background-color: var(--background-color2);
+    width: 100%;
+    color: var(--white-color);
+    min-height: 50vh;
+}
 
+.bar-container {
+    width: 100%;
+    padding: 40px 0;
+}
+
+#skills .radial-bars {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.radial-bars .radial-bar{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.radial-bars .radial-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10;
+    stroke: var(--background-color1);
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate 1s linear forwards;
+}
+
+@keyframes animate {
+    100% {
+        stroke-dashoffset: -1;
+    }
+}
+
+.path{
+    stroke-width: 10;
+    stroke: var(--purple-color);
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+
+.path-1 {
+    animation: animate-path-1 1s linear forwards;
+}
+
+.path-2 {
+    animation: animate-path-2 1s linear forwards;
+}
+
+.path-3 {
+    animation: animate-path-3 1s linear forwards;
+}
+
+@keyframes animate-path-1 {
+    100% {
+        stroke-dashoffset: 50;
+    }
+}
+
+@keyframes animate-path-2 {
+    100% {
+        stroke-dashoffset: 125;
+    }
+}
+
+@keyframes animate-path-3 {
+    100% {
+        stroke-dashoffset: 200;
+    }
+}
+
+.radial-bar .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText .5s .5s linear forwards;
+    opacity: 0;
+}
+
+.radial-bar .text{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText .5s .5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+/* SERVICES SECTION */
 #services {
     background-color: var(--background-color2);
     width: 100%;
@@ -531,6 +649,10 @@ p, span {
 
 #contact .contact-info {
     width: 40%;
+}
+
+#contact .btn{
+    z-index: 1;
 }
 
 #contact .contact-list {
